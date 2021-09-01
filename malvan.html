@@ -1,289 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Coastal Vibes : Your home by the shore!</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
- <script src='https://kit.fontawesome.com/a076d05399.js'></script>
- 
-  <style>
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 14px;}
-  
-  .bg-1 { 
-    background-image:url("images/banner-malvan.png");
-    color: #ffffff;
-	height:550px;
-	 background-repeat: no-repeat;
-  background-size: auto;
-  padding-top:-10px;
-      margin-top: -37px;
-  }
-  .bg-2 { 
-    background-color: #003581; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #c9302c; /* Black Gray */
-    color: #fff;
-  }
-   .bg-5 { 
-    background-color: #222222; /* Black */
-    color: #fff;
-  }
-   .bg-6 { 
-    background-color: #222222; /* coral */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 50px;
-    padding-bottom: 30px;
-  }
 
-  .navbar {
-  font:Montserrat, sans-serif;
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Coastal Vibes : Your home by the shore!</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="images/favicon.png" rel="icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+ <link href="assets/css/style.css" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
  
-    padding-top: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 14px;
-	font-weight:600;
-    letter-spacing: 2px;
+<style>
+.mySlides {display:none;}
+
+  div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
-  .navbar-nav  li a:hover {
-    color:#238bcc !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
   }
-  </style>
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+</style>
+
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header top">
-   <p class="welcome"> WELCOME TO COASTAL VIBES </p>
-   </div>
-   	<div class="navbar-header callus">
-      <p class="welcome"> Call us at : +91-7297978797</p>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          
+          <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html" class="logo me-auto me-lg-0"><img src="images/coastalvibeslogo.png" alt="" class="img-fluid"></a>
+
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+              <li><a class="nav-link scrollto active" href="malvan.html">Malvan</a></li>
+              <li><a class="nav-link scrollto" href="#goa">Goa</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        <div class="get-started-btn scrollto">
+		
+         <a href="tel:+91 72 9797 8797" class="ri-whatsapp-line"></a >
+		 <a href="mailto:coastalvibesin@gmail.com" class="ri-mail-line"></a>
+		 <a href="https://m.facebook.com/CoastalVibesIndia" class="ri-facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="ri-instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+		</div>
+      </div>
+
     </div>
-  </div>
-  <div class="container">
- <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-        <a href="home.html"><img src="images/logo.png" class="img-responsive" style="display:inline" alt="Coastal Vibes" width="190" height="190"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="goa.html">Goa</a></li>
-        <li><a href="malvan.html">Malvan</a></li>
-		<li><a href="about.html">About</a></li>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="malvanbg" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row justify-content-left">
+	  
        
-      </ul>
+      </div>
     </div>
+  </section><!-- End Hero -->
 
-  </div>
-</nav>
+  <main id="main">
 
+    
 
-
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  
-  <div class="row">
-    <div class="col-sm-9">
-<div class=" bg-1 text-center">
-
- <br>
-  
+    <!-- ======= Services Section ======= -->
+<!-- Tab links -->
+<div class="container">
+ <div class="section-title">
+<h2>What we love about this home</h2>
+			  <p>Set in the backdrop of the historic Sindhudurg fort and walking distance from the beach, CostalVibes MALVAN is a beautiful voyage to be experienced, explored, and expressed by inspired minds.</p>
+			 
+			   </div>
+<div class="tab">
+  <button class="tablinks" onclick="openAmenities(event, 'Overview')">Overview</button>
+  <button class="tablinks" onclick="openAmenities(event, 'Amenities')">Amenities</button>
+  <button class="tablinks" onclick="openAmenities(event, 'Gallery')">Gallery</button>
+  <button class="tablinks" onclick="openAmenities(event, 'Nearby')">Things to do</button>
+  <button class="tablinks" onclick="openAmenities(event, 'Booking')">Booking Details</button>
 </div>
 
-  </div>
+<!-- Tab content -->
+<div id="Overview" class="tabcontent">
+  <p><br><b>CoastalVibes Malvan</b> came into being with a single purpose: to let you slow down, unwind and to connect you with yourself <br> <br>
+An exclusive environ of nature, spread over 25,000 sqft of land, is designed and crafted to serve experience of traditional things in a contemporary manner. <br><br>
+Old ancestral property redeveloped to give you an atos of village living and yet maintaining the urban standards. Inviting varandhas and high ceilings of the house, amongst a dense canopy of coconut forest, is planned with a spirit of its own.</p>
+</div>
 
+<div id="Amenities" class="tabcontent">
+  <p class="sublinks"><b>VILLA</b></p>
+	    
+      <p>- 2BHK independent villa set amist lush coconut plantation<br>
+      - Two Queen AC bedrooms with ensuite<br>
+      - 22ftx22ft Living room with sloaping roof<br>
+        - Open plan,fully functional kitchen<br>
+      - two oversize varandhas on either side of the house<br>
+      </p>
+	  <hr>
+	 <p class="sublinks"><b>EQUIPED KITCHEN </b></p>
+	    
+      <p>Fully functional kitchen with : <br>
+      - Gas cook top<br>
+        - Microwave<br>
+        - Utinsils<br>
+        - Crockery and cuttlery<br>
+        - Refigerator
+  </p>
+ <hr>
+<p class="sublinks"><b>PARKING</b></p>
+	    
+      <p> - Parking inside the compound gate<br>
+         - Parking at your own risk
+    </p>
+ <hr>
+<p class="sublinks"><b>ACCOMODATION</b></p>
+	    
+      <p>- Bedroom1: 2 (Queen Bed)<br>
+        - Bedroom2: 2 (Queen Bed)<br>
+        - Living: 2 (Sofa Bed) <br>
+        - Max capacity : 6
+      </p>
+	  <hr>
+	  <p class="sublinks"><b>OTHER AMINITIES</b></p>
+	    
+      <p> - 6 seater dinning <br>
+          - Outdoor seating in varandhas <br>
+          - sofa bed in living <br>
+          - TV with SoundBar <br>
+         - AC in both bedrooms <br>
+          - Inverter backup for lihts and fans <br>
+  </p>
+ <hr>
+</div>
 
-	   <div class="col-sm-3">
-	  <div class="container">
-  <div class="packagecard">
-    <div class="card-header"><img class="card-img-top" src="images/goa-thumb.png" alt="image"></div>
-    <div class="card-body"> <h4 class="card-title">Goa - Colva</h4>
-	<hr>
-   <p class="card-text">Starts from ₹ 5,000/night</p>
-   <hr>
-   <a href="enquiry.html" class="btn btn-danger">Book Now</a></p>
-   
-    </div>
+<div id="Gallery" class="tabcontent">
+  <h3>CoastalVibes Malvan Images</h3>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/malvan/malvan01.jpg">
+      <img src="images/malvan/malvan01.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
   </div>
 </div>
 
-    </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/malvan/malvan02.jpg">
+      <img src="images/malvan/malvan02.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
   </div>
-  <div class="row">
-        <div class="col-sm-8">
- <div class="tabcontainer">
-  <h3>What we love about this home</h3>
-  <br>
-  <ul class="nav nav-tabs nav-justified">
-    <li class="active"><a data-toggle="tab" href="#home"><b>Overview</b></a></li>
-    <li><a data-toggle="tab" href="#menu1"><b>Amenities</b></a></li>
-    <li><a data-toggle="tab" href="#menu2"><b>Gallery</b></a></li>
-	 <li><a data-toggle="tab" href="#menu3"><b>Things to do near by</b></a></li>
-	 <li><a data-toggle="tab" href="#menu4"><b>Booking Details</b></a></li>
-   
-  </ul>
-   
+</div>
 
-   <div class="tab-content text-left">
-    <div id="home" class="tab-pane fade in active">
-	<br>
-      <h5><b>WELCOME HOME</b></h5>
-      <p>Set in the backdrop of the historic Sindhudurg fort and walking distance from the beach, CostalVibes MALVAN is a beautiful voyage to be experienced, explored, and expressed by inspired minds.<br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/malvan/malvan03.jpg">
+      <img src="images/malvan/malvan03.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-It came into being with a single purpose: to let you slow down, unwind and to connect you with yourself.<br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/malvan/malvan04.jpg">
+      <img src="images/malvan/malvan04.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-An exclusive environ of nature, spread over 25,000 sqft of land, is designed and crafted to serve experience of traditional things in a contemporary manner.<br>
-
-Old ancestral property redeveloped to give you an atos of village living and yet maintaining the urban standards. Inviting varandhas and high ceilings of the house, amongst a dense canopy of coconut forest, is planned with a spirit of its own.
-<br>
-</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-	<br>
-      <h5><b>ROOMS</b></h5>
-	    
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-	  <hr>
-	  <h5><b>WIFI</b></h5>
-	    
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
- <hr>
-<h5><b>EQUIPED KITCHEN</b></h5>
-	    
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
- <hr>
-<h5><b>ROOMS</b></h5>
-	    
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-	  <hr>
-	  <h5><b>WIFI</b></h5>
-	    
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
- <hr>
-<h5><b>EQUIPED KITCHEN</b></h5>
-	    
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
  
-    </div>
-    <div id="menu2" class="tab-pane fade">
-	<br>
-      Coming Soon
-    </div>
-    <div id="menu3" class="tab-pane fade">
-	<br>
- <h5><b> <i class="fas fa-vest-patches fa-md " ></i></i>&nbsp; SCUBA DIVING</b></h5>
+  
+  <p>&nbsp;
+  </p>
+  
+</div>
+<div id="Nearby" class="tabcontent">
+ 
+  <p class="sublinks"><b> <i class="fas fa-vest-patches fa-md " ></i></i>&nbsp; SCUBA DIVING</b></p>
 	    
       <p>Experience the underwater dive in the azure waters of the Malvan.</p>
 	  <hr>
-	 <h5><b> <i class="fas fa-water fa-md " ></i></i>&nbsp; WATER SPORTS</b></h5>
+	<p class="sublinks"><b> <i class="fas fa-water fa-md " ></i></i>&nbsp; WATER SPORTS</b></p>
 	    
       <p>Embark on a Malvan water sports activity so that you can grasp the stunning and magical beauty of Malvan’s underwater world. Experience the unbounded beauty of the endless water body and serene landscapes that would refresh you from inside.</p>
  <hr>
- <h5><b> <i class="fab fa-fort-awesome fa-md " ></i></i>&nbsp; SINDHUDURG FORT</b></h5>
+ <p class="sublinks"><b> <i class="fab fa-fort-awesome fa-md " ></i></i>&nbsp; SINDHUDURG FORT</b></p>
 	    
       <p>Located off the coast of Maharashtra, the Sindhudurg Fort is an ancient fortress occupying an islet in the Arabian Sea. This imposing construction is spread over an area of 48 acres, with its massive walls standing tall against the crashing waves of the sea. The main entrance of the fort is hidden away in such a manner that no one can identify it from the outside.
-  </div>
- 
-	
-	  <div id="menu4" class="tab-pane fade">
-	Coming Soon
-    </div>
-	   </div>
-  </div>
-</div>  
 </div>
-  </div>
+<div id="Booking" class="tabcontent">
+  <h3>Coming Soon</h3>
+
 </div>
-
-  
-
-<!-- Fourth Container -->
-<div class="container-fluid bg-5 text-center">
-<h2><b>Most Popular facilities</b></h2> 
-<br>  
-   <div class="row">
-	 <div class="col-sm-2">
-	
-	  <i class="fas fa-couch fa-lg " ></i></i><h3 class="margin subtitle">Family rooms</h3><br>
-  </div>
-      <div class="col-sm-2">
-	   <i class="fas fa-utensils fa-lg " ></i></i><h3 class="margin subtitle"><h3 class="margin subtitle">Equiped Kitchen</h3><br>
-  </div>
-      <div class="col-sm-2">
-	  <i class="fas fa-wifi fa-lg " ></i></i><h3 class="margin subtitle"><h3 class="margin subtitle">Free Wifi</h3><br>
- 
-    </div>
-	   <div class="col-sm-2">
-	   <i class="fas fa-paw fa-lg " ></i></i><h3 class="margin subtitle"><h3 class="margin subtitle">Pet Friendly
-</h3><br>
-
-    </div>
-	
-	 <div class="col-sm-2">
-	   <i class="fas fa-car fa-lg " ></i></i><h3 class="margin subtitle"><h3 class="margin subtitle">Parking
-</h3><br>
-
-    </div>
-	
-	 <div class="col-sm-2">
-	   <i class="fas fa-eye fa-lg " ></i></i><h3 class="margin subtitle"><h3 class="margin subtitle">Security Services
-</h3><br>
-
-    </div>
-  </div>
 </div>
+<!-- End Services Section -->
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-<div class="row">
-    <div class="col-sm-4">
- <h4>Contact Address</h4>
- <p>Coastal Vibes, Tarkarli, Malvan</p>
- </div>
-    <div class="col-sm-4">
- <h4>Get in touch</h4>
-  
-  <p><a style="color: white;" href="#">coastalvibesin@gmail.com</a></p>
-   <p><a style="color: white;" href="#">coastalvibesin@gmail.com</a></p>
- </div>
-    <div class="col-sm-4">
- <h4>Call us at</h4>
- <p>+91-12-3456-7891 / +91-12-3456-7891</p>
- </div>
- </div>
- </footer>
- <footer class="container-fluid bg-6 text-center">
-  <p>© Coastal Vibes &nbsp;&nbsp;|&nbsp;&nbsp; For more information, visit our Privacy Policy.
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
 
-</a></p> 
-</footer>
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+             <div class="address">
+                <i class="ri-whatsapp-line"></i>
+                <h4>Whatsapp:</h4>
+                <p><a href="tel:+91 72 9797 8797">+91 72 9797 8797</a></p>
+              </div>
+            </div> 
+		  
+		  <div class="col-lg-4">
+            <div class="email">
+                <i class="ri-mail-line"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:coastalvibesin@gmail.com"> Coastalvibesin@gmail.com</a></p>
+              </div>
+             </div>
+			 
+			 
+		  	  <div class="col-lg-4">
+             <h4>Follow Us:</h4>
+                 <div class="social-links">
+       <a href="https://m.facebook.com/CoastalVibesIndia" class="ri-facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="ri-instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+              </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Coastal Vibes</span></strong>. All Rights Reserved.
+      </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+<script>
+var slideIndex = 1;
+plusDivsGoa(slideIndex);
+
+function plusDivsGoa(n) {
+  showDivsGoa(slideIndex += n);
+}
+
+function showDivsGoa(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlidesGoa");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
+
+
+var slideIndexMalvan = 1;
+plusDivsMalvan(slideIndexMalvan);
+
+function plusDivsMalvan(n) {
+  showDivsMalvan(slideIndexMalvan += n);
+}
+
+function showDivsMalvan(n) {
+  var j;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndexMalvan = 1}
+  if (n < 1) {slideIndexMalvan = x.length}
+  for (j = 0; j < x.length; j++) {
+     x[j].style.display = "none";  
+  }
+  x[slideIndexMalvan-1].style.display = "block";  
+}
+
+
+function openAmenities(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 </body>
+
 </html>
