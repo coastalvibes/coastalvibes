@@ -26,6 +26,8 @@
  <link href="assets/css/style.css" rel="stylesheet">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
  
+    <!-- call button icon, info button, msg button, map button  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .mySlides {display:none;}
 
@@ -121,7 +123,7 @@
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
-<body>
+<body onload="openAmenities(event, 'Overview1')">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -136,15 +138,15 @@
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
               <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-              <li><a class="nav-link scrollto active" href="malvan.html">Malvan</a></li>
-              <li><a class="nav-link scrollto" href="#goa">Goa</a></li>
-              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link scrollto active" href="#Malvan">Malvan</a></li>
+              <li><a class="nav-link scrollto" href="colva.html">Colva</a></li>
+              <li><a class="nav-link scrollto" href="candolim.html">Candolim</a></li>
+              <li><a class="nav-link scrollto" href="aboutus.html">About Us</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
         <div class="get-started-btn scrollto">
-		
-         <a href="tel:+91 72 9797 8797" class="ri-whatsapp-line"></a >
+         <a href="https://wa.me/+917297978797" class="ri-whatsapp-line"></a >
 		 <a href="mailto:coastalvibesin@gmail.com" class="ri-mail-line"></a>
 		 <a href="https://m.facebook.com/CoastalVibesIndia" class="ri-facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="ri-instagram"><i class="bx bxl-instagram"></i></a>
@@ -178,7 +180,7 @@
 			 
 			   </div>
 <div class="tab">
-  <button class="tablinks" onclick="openAmenities(event, 'Overview')">Overview</button>
+  <button class="tablinks active" onclick="openAmenities(event, 'Overview')">Overview</button>
   <button class="tablinks" onclick="openAmenities(event, 'Amenities')">Amenities</button>
   <button class="tablinks" onclick="openAmenities(event, 'Gallery')">Gallery</button>
   <button class="tablinks" onclick="openAmenities(event, 'Nearby')">Things to do</button>
@@ -329,7 +331,9 @@ Old ancestral property redeveloped to give you an atos of village living and yet
       <p>Located off the coast of Maharashtra, the Sindhudurg Fort is an ancient fortress occupying an islet in the Arabian Sea. This imposing construction is spread over an area of 48 acres, with its massive walls standing tall against the crashing waves of the sea. The main entrance of the fort is hidden away in such a manner that no one can identify it from the outside.
 </div>
 <div id="Booking" class="tabcontent">
-  <h3>Coming Soon</h3>
+  <h4>Please Call / Whatsapp for booking</h4>
+  	<a href="#tel:+917297978797" class="btn btn-danger">Call <i class="fa fa-phone"></i></a>
+    <a href="https://wa.me/+917297978797" class="btn btn-danger">Msg <i class="fa fa-whatsapp"></i></a>
 
 </div>
 </div>
@@ -345,7 +349,7 @@ Old ancestral property redeveloped to give you an atos of village living and yet
              <div class="address">
                 <i class="ri-whatsapp-line"></i>
                 <h4>Whatsapp:</h4>
-                <p><a href="tel:+91 72 9797 8797">+91 72 9797 8797</a></p>
+                <p><a href="https://wa.me/+917297978797">+91 72 9797 8797</a></p>
               </div>
             </div> 
 		  
@@ -441,6 +445,7 @@ function showDivsMalvan(n) {
 
 
 function openAmenities(evt, cityName) {
+  //alert("Evt :"+evt);
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -453,12 +458,16 @@ function openAmenities(evt, cityName) {
   // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+       if (cityName!='Overview1') {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+       } else {cityName="Overview"}
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+
 }
   
   var slideIndex = 1;
